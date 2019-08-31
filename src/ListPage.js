@@ -5,23 +5,6 @@ import {
     graphql
   } from 'react-relay'
 
-// const mockPostData = [
-//     {
-//         node: {
-//             id: '1',
-//             description: 'Bem loco memo',
-//             imageUrl: 'https://media.giphy.com/media/juSCTzqDAV1Xq/giphy.gif'
-//         }
-//     },
-//     {
-//         node: {
-//             id: '2',
-//             description: 'Rebitado!!!11!',
-//             imageUrl: 'https://media.giphy.com/media/E6jscXfv3AkWQ/giphy.gif'
-//         }
-//     }
-// ]
-
 class ListPage extends React.Component {
     render() {
         return (
