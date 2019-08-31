@@ -18,12 +18,13 @@ const mutation = graphql`
 `
 
 let tempID = 0
+
 export default (description, imageUrl, viewerId, callback) => {
     const variables = {
         input: {
             description,
             imageUrl,
-            clientMutationId: ''
+            clientMutationId: '',
         },
     }
     commitMutation(

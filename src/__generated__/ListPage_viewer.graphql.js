@@ -11,11 +11,7 @@ import type {ConcreteFragment} from 'relay-runtime';
 export type ListPage_viewer = {|
   +allPosts: ?{|
     +edges: ?$ReadOnlyArray<?{|
-      +node: ?{|
-        +id: string;
-        +description: string;
-        +imageUrl: string;
-      |};
+      +node: ?{| |};
     |}>;
   |};
 |};
@@ -68,27 +64,6 @@ const fragment /*: ConcreteFragment*/ = {
               "name": "node",
               "plural": false,
               "selections": [
-                {
-                  "kind": "ScalarField",
-                  "alias": null,
-                  "args": null,
-                  "name": "id",
-                  "storageKey": null
-                },
-                {
-                  "kind": "ScalarField",
-                  "alias": null,
-                  "args": null,
-                  "name": "description",
-                  "storageKey": null
-                },
-                {
-                  "kind": "ScalarField",
-                  "alias": null,
-                  "args": null,
-                  "name": "imageUrl",
-                  "storageKey": null
-                },
                 {
                   "kind": "FragmentSpread",
                   "name": "Post_post",
