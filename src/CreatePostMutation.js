@@ -4,7 +4,6 @@ import {
 } from 'react-relay'
 import { ConnectionHandler } from 'relay-runtime'
 import environment from './Environment'
-import { descriptions } from 'jest-config';
 
 const mutation = graphql`
  mutation CreatePostMutation($input: CreatePostInput!) {
@@ -19,7 +18,6 @@ const mutation = graphql`
 `
 
 let tempID = 0
-
 export default (description, imageUrl, viewerId, callback) => {
     const variables = {
         input: {
